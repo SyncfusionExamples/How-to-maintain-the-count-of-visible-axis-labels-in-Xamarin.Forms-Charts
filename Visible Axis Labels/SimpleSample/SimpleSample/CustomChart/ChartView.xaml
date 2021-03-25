@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:local="clr-namespace:SimpleSample"
+             x:Class="SimpleSample.ChartView">
+  <ContentView.Content>
+        <chart:SfChart BackgroundColor="Transparent" x:Name="ChartControl" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis x:Name="XAxis" IsVisible="False" ShowMajorGridLines="False">
+                    <chart:CategoryAxis.AxisLineStyle>
+                        <chart:ChartLineStyle StrokeColor="White"/>
+                    </chart:CategoryAxis.AxisLineStyle>
+                </chart:CategoryAxis>
+            </chart:SfChart.PrimaryAxis>
+
+            <chart:SfChart.SecondaryAxis>
+                <local:CustomNumericAxis x:Name="YAxis" EdgeLabelsDrawingMode="Shift" IsVisible="True" ShowMajorGridLines="False" ShowMinorGridLines="False">
+                    <chart:NumericalAxis.AxisLineStyle>
+                        <chart:ChartLineStyle StrokeColor="White"/>
+                    </chart:NumericalAxis.AxisLineStyle>
+                    <chart:NumericalAxis.LabelStyle>
+                        <chart:ChartAxisLabelStyle TextColor="White"/>
+                    </chart:NumericalAxis.LabelStyle>
+                </local:CustomNumericAxis>
+            </chart:SfChart.SecondaryAxis>
+        </chart:SfChart>
+
+    </ContentView.Content>
+</ContentView>
