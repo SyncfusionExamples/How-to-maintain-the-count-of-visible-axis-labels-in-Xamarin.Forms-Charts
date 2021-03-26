@@ -15,7 +15,7 @@ namespace SimpleSample
             {
                 VisibleLabels.Clear();
 
-                //Considered that we need 10 labels. so divided by 10.
+                //Considered that we need 5 labels. so divided by 5.
                 var interval = (VisibleMaximum - VisibleMinimum) / 5;
 
                 var start = VisibleMinimum;
