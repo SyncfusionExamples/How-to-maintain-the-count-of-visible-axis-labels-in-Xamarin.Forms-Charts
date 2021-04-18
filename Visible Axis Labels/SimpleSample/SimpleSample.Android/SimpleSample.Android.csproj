@@ -52,9 +52,7 @@
   <ItemGroup>
      <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="*" />
     <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="*"  />
-    <PackageReference Include="Xamarin.Forms">
-      <Version>4.5.0.617</Version>
-    </PackageReference>
+      <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
